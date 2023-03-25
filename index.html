@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager Application</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- logo here -->
+            <div class="logo"><a href="#">SALTCO</a></div>
+            <!-- nav links -->
+            <div class="nav_links">
+                <!-- checkbox to toggle -->
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- nav menu -->
+                <ul class="menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class=" projects"><a href="#">Projects</a>
+                        <!-- dropdown menu -->
+                        <ul class="dropdown">
+                            <li><a href="#">Project 1</a></li>
+                            <li><a href="#">Project 2</a></li>
+                            <li><a href="#">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                                
+            </div>
+        </nav>
+    </header>
+    <main class="container wrap">
+        <div class="section-a heading">
+            <p class="title">
+                <h1>Task Organizer and Manage</h1>
+            </p>
+            <p class="subtitle">
+                To save your time and efforts
+            </p>
+        </div>
+        <div class="section-b task_manager">
+            <div class="search_box">
+                <form class="search"> 
+                    <input type="text" name="task" placeholder="search tasks" autocomplete="off">                   
+                    <i class="bi bi-x-square-fill reset"></i>
+                    <!-- <i class="bi bi-x-square"></i> -->
+                </form>
+            </div>
+            <div class="task_box">
+                <form class="add_box">
+                    <input type="text" name="task" placeholder="add new task" autocomplete="off">
+                    <input type="submit" value="Add">
+                </form>
+                <!-- TO ADD THE TASK LIST -->
+                <ul class="tasks">
+                    
+                </ul>                
+            </div>
+            <div class="message_box"> 
+                <span></span>                
+                <button class="clear">Clear All</button>                            
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="footer_1 col large-25 small-50 tiny-100 ta-1 flt">
+                <h4>About</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Eligendi aliquam porro enim 
+                    facere quasi tempora. Eligendi aliquam porro enim 
+                    facere quasi tempora. 
+                </p>
+            </div>
+            <div class="footer_2 col large-25 small-50 tiny-100 ta-1 flt">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>  
+            </div>
+            <div class="footer_3 col large-25 small-50 tiny-100 ta-1 flt">
+                <h4>Latest Blogs</h4>
+                <p><a href="#">Blog 1</a></p>
+                <p><a href="#">Blog 2</a></p>
+                <p><a href="#">Blog 3</a></p>
+                <p><a href="#">Blog 4</a></p>                                
+            </div>
+            <div class="footer_4 col large-25 small-50 tiny-100 ta-1 flt">
+                <h4>Get in Touch</h4>
+                <p>Address</p>
+                <p>City</p>
+                <p>State</p>
+                <p>email</p>
+                <p>website@website.com</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr>  
+        <div class="copyright">
+            <p>@saltibin-2023 --CopyRight reserved.</p>
+        </div>        
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
